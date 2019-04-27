@@ -101,6 +101,7 @@ function drawEvent() {
                 clear(lastPoint.x, lastPoint.y, rectWidth, rectHeight);
             }
             lastPoint = newPoint;
+            e.preventDefault();
         }
         canvas.ontouchend = function () {
             using = false;
