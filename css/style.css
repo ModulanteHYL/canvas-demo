@@ -9,7 +9,7 @@ div{
 }
 svg{transition: all 0.3s;margin: 20px 15px;}
 #canvas {display: block;}
-.eraser,.clear,.download{cursor: pointer;width: 2.3em; height: 2.3em;}
+.eraser,.pen,.clear,.download{cursor: pointer;width: 2.3em; height: 2.3em;}
 .active{transform: scale(1.2);color: red;}
 .colorSelected{transform: scale(1.2);}
 .palette{
