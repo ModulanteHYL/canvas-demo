@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+#canvas {
+    display: block;
+}
+
+button {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.clear {
+    left: 3px;
+    bottom: 3px;
+}
+.pan{
+    left: 63px;
+    bottom: 3px;
+}
