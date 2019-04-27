@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Canvas画板</title>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
+
 <body>
-    <canvas id="canvas" width:=""; height="";></canvas>
-    <button id="clear" class="clear">橡皮擦</button>
-    <button id="pan" class="pan">画笔</button>
+    <canvas id="canvas" style="background: #ffffff;"></canvas>
+    <div>
+        <svg id="pen" class="icon pen active">
+            <use xlink:href="#icon-pen1"></use>
+        </svg>
+        <svg id="eraser" class="icon eraser">
+            <use xlink:href="#icon-Eraser-Tool"></use>
+        </svg>
+        <svg id="clear" class="icon clear">
+            <use xlink:href="#icon-qingchu"></use>
+        </svg>
+        <svg id="download" class="icon download">
+            <use xlink:href="#icon-xiazai"></use>
+        </svg>
+    </div>
+    <ol class="palette">
+        <li id="black" class="black colorSelected"></li>
+        <li id="red" class="red"></li>
+        <li id="yellow" class="yellow"></li>
+        <li id="blue" class="blue"></li>
+        <li id="green" class="green"></li>
+    </ol>
     <script src="js/main.js"></script>
+    <script src="//at.alicdn.com/t/font_1165369_by3hio6isou.js"></script>
 </body>
 
 </html>

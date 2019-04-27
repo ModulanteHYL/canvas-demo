@@ -1,23 +1,35 @@
-body {
-    margin: 0;
-    position: relative;
-}
-
-#canvas {
-    display: block;
-}
-
-button {
+.icon {width: 2em; height: 2em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
+ *{margin: 0;padding: 0;}
+body {position: relative;overflow: hidden;}
+div{
+    display: inline-block;
     position: absolute;
-    background: #ffffff;
-    border-radius: 10px;
+    left: 0;
+    top: 0;
+}
+svg{transition: all 0.3s;margin: 20px 15px;}
+#canvas {display: block;}
+.eraser,.clear,.download{cursor: pointer;width: 2.3em; height: 2.3em;}
+.active{transform: scale(1.2);color: red;}
+.colorSelected{transform: scale(1.2);}
+.palette{
+    padding: 5px;
+    margin-top: 70px;
+    margin-left: 15px;
+    list-style: none;
+    position: fixed;
+    left: 0;
+    top: 0;
     cursor: pointer;
 }
-.clear {
-    left: 3px;
-    bottom: 3px;
+.palette>li{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+    border-radius: 50%;
 }
-.pan{
-    left: 63px;
-    bottom: 3px;
-}
+.black{background: black;}
+.red{background: red;}
+.yellow{background: rgb(247, 247, 25);}
+.blue{background: blue;}
+.green{background: green;}
